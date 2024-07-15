@@ -4,12 +4,15 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+# Before running, please change the below settings:
 MANUAL_QUERY = "" # Add the manual query here 
+MODEL_TYPE = "gpt-4" # Add the model type here
+ENDPOINT = 'https://api.openai.com/v1/chat/completions' # Define the API endpoint
+
+# ----------------------------
 
 api_key = os.getenv("OPENAI_API_KEY")
 
-# Define the API endpoint
-ENDPOINT = 'https://api.openai.com/v1/chat/completions'
 
 headers = {
     'Content-Type': 'application/json',
@@ -17,7 +20,7 @@ headers = {
 }
 
 payload = {
-    "model": "gpt-4",  # Use the appropriate model name
+    "model": MODEL_TYPE,  # Use the appropriate model name
     "messages": [
         {"role": "user", "content": MANUAL_QUERY.replace("Now write the translation.", "Now write the translation. Output the translation only. If you are not sure what the translation should be, then give your best guess. Do not say that you do not speak Kalamang. If your translation is wrong, that is fine, but you have to provide a translation.")}
     ],
