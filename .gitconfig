@@ -1,7 +1,0 @@
-mtob/
-.env
-
-# for precaution
-*.json
-*.txt
-*.tex
