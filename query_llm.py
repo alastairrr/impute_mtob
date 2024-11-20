@@ -61,7 +61,7 @@ def main():
                     if key not in word_dict["ke"].keys():
                         word_dict["ke"][key] = value
                         print(key, word_dict["ke"][key])
-                count += 1
+                        count += 1
             except Exception as e:
                 print(f"Error: {e}")
         else:

@@ -30,7 +30,7 @@ def sentence_splitter(sentence_source: str, sentence_target: str, wordlist: dict
             result.append(cleaned_word)
         elif cleaned_word.lower() in wordlist:
             result.append(cleaned_word.lower())
-        else:  
+        else:  # Word Break
             cleaned_word = "#" + cleaned_word.lower() + "#"
             dp = [False] * (len(cleaned_word) + 1)
             dp[len(cleaned_word)] = True
