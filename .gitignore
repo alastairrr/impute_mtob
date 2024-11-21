@@ -5,3 +5,6 @@ mtob/
 *.json
 *.txt
 *.tex
+
+# include requirements.txt
+!requirements.txt

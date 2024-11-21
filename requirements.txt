@@ -1,0 +1,10 @@
+requests
+python-dotenv
+typed-argument-parser
+
+evaluate
+pylcs
+accelerate
+rouge_score
+sacrebleu
+cer

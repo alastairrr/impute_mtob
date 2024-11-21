@@ -1,5 +1,4 @@
 ## Imputation Pipeline For MTOB
-We report chrF improvements across all examples of gpt-3.5-turbo gpt-4, and select examples for Claude 2.
 In our imputation experiments, we focus on translations from Kalamang to English.
 This repository outlines the steps to replicate the imputation process and recreate our published results.
 
